@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import {
+  Container,
   HeaderContainer,
   HeaderPhotoProfile,
   HeaderFullName,
@@ -15,17 +16,26 @@ import {
 } from './style';
 import { FileEarmarkPdf } from 'react-bootstrap-icons';
 import Resume from '../../assets/resume.pdf';
+import ReactCountryFlag from 'react-country-flag';
 
 const profile = require('../../assets/profile.jpeg');
 
 function Home() {
   return (
-    <div>
+    <Container>
       <Navbar />
       <HeaderContainer>
         <HeaderPhotoProfile src={profile} />
         <HeaderFullName>Ananda Dana Pratama</HeaderFullName>
-        <HeaderNickName>nanda/dana</HeaderNickName>
+        <HeaderNickName>
+          <ReactCountryFlag
+            countryCode="ID"
+            aria-label="Indonesia"
+            title="Indonesia"
+            svg
+          />{' '}
+          nanda/dana
+        </HeaderNickName>
       </HeaderContainer>
       <DescriptionContainer>
         <DescriptionHeadlineText>
@@ -33,25 +43,25 @@ function Home() {
           hood” components of websites and applications.
         </DescriptionHeadlineText>
         <DescriptionBodyText>
-          Currently, Nanda working at Ecomindo Saranacipta, where he develop
+          Currently, Nanda works at Ecomindo Saranacipta, where he develop
           server-side for Bank Multiarta Sentosa. Nanda have a expertise in{' '}
-          <CustomLinkWithColor href="https://spring.io" color="#31983A">
+          <CustomLinkWithColor href="https://spring.io" color="#31983A" target="_blank">
             Spring Boot
           </CustomLinkWithColor>{' '}
           and{' '}
-          <CustomLinkWithColor href="https://quarkus.io" color="#1679AB">
+          <CustomLinkWithColor href="https://quarkus.io" color="#1679AB" target="_blank">
             Quarkus
           </CustomLinkWithColor>
           , gained from his experience at MyRepublic, IFG Life, Legit Group.
         </DescriptionBodyText>
         <DescriptionDownloadSection>
-          <DescriptionDownloadButton href={Resume}>
+          <DescriptionDownloadButton href={Resume} target="_blank">
             Download Resume <FileEarmarkPdf />
           </DescriptionDownloadButton>
         </DescriptionDownloadSection>
       </DescriptionContainer>
       <Footer />
-    </div>
+    </Container>
   );
 }
 

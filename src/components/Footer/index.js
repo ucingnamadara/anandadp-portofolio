@@ -16,24 +16,25 @@ function Footer() {
         Connect with me on social media!
       </MediaSocialHeadline>
       <MediaSocialSection>
-        <MediaSocialButton href={'https://www.linkedin.com/in/anandadp/'}>
+        <MediaSocialButton href={'https://www.linkedin.com/in/anandadp/'} target="_blank">
           <Linkedin />
         </MediaSocialButton>
-        <MediaSocialButton href={'https://twitter.com/anandana_'}>
+        <MediaSocialButton href={'https://twitter.com/anandana_'} target="_blank">
           <TwitterX />
         </MediaSocialButton>
-        <MediaSocialButton href={'https://www.instagram.com/anandadp_/'}>
+        <MediaSocialButton href={'https://www.instagram.com/anandadp_/'} target="_blank">
           <Instagram />
         </MediaSocialButton>
-        <MediaSocialButton href={'https://github.com/ucingnamadara'}>
+        <MediaSocialButton href={'https://github.com/ucingnamadara'} target="_blank">
           <Github />
         </MediaSocialButton>
       </MediaSocialSection>
       <Copyright>
-        ©2024 Built with{' '}
-        <CustomLinkWithColor href="https://react.dev/" color="#F23F49">
+        Built with{' '}
+        <CustomLinkWithColor href="https://react.dev/" color="#F23F49" target="_blank">
           React
         </CustomLinkWithColor>
+        {' '}©2024
       </Copyright>
     </Container>
   );

@@ -25,7 +25,7 @@ export const MediaSocialSection = styled.div`
 `;
 
 export const MediaSocialButton = styled.a`
-  margin: 10px 25px 36px 25px;
+  margin: 20px 30px 36px 30px;
   border-radius: 4px;
   color: #495057;
   font-size: 36px;

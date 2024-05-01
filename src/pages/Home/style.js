@@ -1,5 +1,9 @@
 import { styled } from 'styled-components';
 
+export const Container = styled.div`
+  background: #f8f9fa;
+`;
+
 export const HeaderContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -14,6 +18,7 @@ export const HeaderPhotoProfile = styled.img`
   height: 350px;
   border-radius: 5%;
   margin-bottom: 1rem;
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.25);
 `;
 
 export const HeaderFullName = styled.p`
