@@ -59,6 +59,10 @@ export const DescriptionBodyText = styled.text`
   padding-right: 7rem;
 `;
 
+export const FlagIcon = styled.img`
+  width: 30px;
+`;
+
 export const CustomLinkWithColor = styled.a`
   text-decoration: none;
   color: ${(props) => props.color};

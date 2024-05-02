@@ -13,12 +13,13 @@ import {
   DescriptionDownloadSection,
   DescriptionDownloadButton,
   CustomLinkWithColor,
+  FlagIcon,
 } from './style';
 import { FileEarmarkPdf } from 'react-bootstrap-icons';
 import Resume from '../../assets/resume.pdf';
-import ReactCountryFlag from 'react-country-flag';
 
 const profile = require('../../assets/profile.jpeg');
+const flag = require('../../assets/flag.gif');
 
 function Home() {
   return (
@@ -28,13 +29,7 @@ function Home() {
         <HeaderPhotoProfile src={profile} />
         <HeaderFullName>Ananda Dana Pratama</HeaderFullName>
         <HeaderNickName>
-          <ReactCountryFlag
-            countryCode="ID"
-            aria-label="Indonesia"
-            title="Indonesia"
-            svg
-          />{' '}
-          nanda/dana
+          <FlagIcon src={flag} title="Indonesia" /> nanda/dana
         </HeaderNickName>
       </HeaderContainer>
       <DescriptionContainer>
@@ -45,11 +40,19 @@ function Home() {
         <DescriptionBodyText>
           Currently, Nanda works at Ecomindo Saranacipta, where he develop
           server-side for Bank Multiarta Sentosa. Nanda have a expertise in{' '}
-          <CustomLinkWithColor href="https://spring.io" color="#31983A" target="_blank">
+          <CustomLinkWithColor
+            href="https://spring.io"
+            color="#31983A"
+            target="_blank"
+          >
             Spring Boot
           </CustomLinkWithColor>{' '}
           and{' '}
-          <CustomLinkWithColor href="https://quarkus.io" color="#1679AB" target="_blank">
+          <CustomLinkWithColor
+            href="https://quarkus.io"
+            color="#1679AB"
+            target="_blank"
+          >
             Quarkus
           </CustomLinkWithColor>
           , gained from his experience at MyRepublic, IFG Life, Legit Group.

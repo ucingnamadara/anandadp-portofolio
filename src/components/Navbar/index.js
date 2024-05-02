@@ -1,35 +1,42 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import {
+  Container,
+  NavbarLogoImg,
+  NavbarLogo,
+  NavbarMenuSection,
+  NavbarMenu,
+} from './style';
 
-function Navbar() {
+const logoImg = require('../../assets/logo.png');
+
+function Navbar(props) {
   return (
-    <div style={navbarStyle}>
-      <Link style={navbarFontStyle} to="/about">
-        About
-      </Link>
-      <Link style={navbarFontStyle} to="/works">
-        Works
-      </Link>
-      <Link style={navbarFontStyle} to="/contact">
-        Contact
-      </Link>
-    </div>
+    <Container>
+      <NavbarLogo href="/">
+        <NavbarLogoImg src={logoImg} />
+        anandadp.dev
+      </NavbarLogo>
+      <NavbarMenuSection>
+        <NavbarMenu
+          href="/about"
+          active={props.page === 'about' ? true : false}
+        >
+          About
+        </NavbarMenu>
+        <NavbarMenu
+          href="/works"
+          active={props.page === 'works' ? true : false}
+        >
+          Works
+        </NavbarMenu>
+        <NavbarMenu
+          href="/contact"
+          active={props.page === 'contact' ? true : false}
+        >
+          Contact
+        </NavbarMenu>
+      </NavbarMenuSection>
+    </Container>
   );
 }
-
-const navbarStyle = {
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'stretch',
-  gap: '20rem',
-  padding: '0 1rem',
-};
-
-const navbarFontStyle = {
-  fontWeight: '500',
-  color: '#6C757D',
-  textDecoration: 'none',
-  fontSize: 32,
-};
-
 export default Navbar;
