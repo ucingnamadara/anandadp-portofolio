@@ -29,7 +29,7 @@ function Home() {
         <HeaderPhotoProfile src={profile} />
         <HeaderFullName>Ananda Dana Pratama</HeaderFullName>
         <HeaderNickName>
-          <FlagIcon src={flag} title="Indonesia" /> nanda/dana
+          <a href='https://open.spotify.com/track/74bzlwFt2z6WNsDcNPkgYF?si=3905fc7170064ecf'><FlagIcon src={flag} title="Indonesia"/></a> nanda/dana
         </HeaderNickName>
       </HeaderContainer>
       <DescriptionContainer>
@@ -38,7 +38,7 @@ function Home() {
           hood” components of websites and applications.
         </DescriptionHeadlineText>
         <DescriptionBodyText>
-          Currently, Nanda works at Ecomindo Saranacipta, where he develop
+          Currently, Nanda is working at Ecomindo Saranacipta, where he develop
           server-side for Bank Multiarta Sentosa. Nanda have a expertise in{' '}
           <CustomLinkWithColor
             href="https://spring.io"

@@ -1,6 +1,6 @@
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
-import { Container, Text, Title, WorkBody, WorkContainer, WorkDescription, WorkImage, WorkTag, WorkTags, WorkTitle, WorkYear } from "./style";
+import { Container, Text, TextBold, Title, WorkBody, WorkContainer, WorkDescription, WorkImage, WorkTag, WorkTags, WorkTitle, WorkYear } from "./style";
 
 const wokumo = require("../../assets/works/Wokumo.png");
 const stella = require("../../assets/works/Stella.png");
@@ -52,7 +52,7 @@ function Works() {
             <Navbar page='works'/>
             <Title>
                 <Text size='32px' weight='400'>Some of Nanda's</Text>  
-                <Text size='96px' weight='700'>WORKS</Text>
+                <TextBold size='96px'>Works</TextBold>
             </Title>
             {works.map(work => {
                 return(

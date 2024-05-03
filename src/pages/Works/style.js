@@ -19,6 +19,14 @@ export const Text = styled.p`
   padding-bottom: 1px;
 `;
 
+export const TextBold = styled.p`
+  font-weight: ${(props) => props.weight};
+  font-size: ${(props) => props.size};
+  color: #212529;
+  padding-bottom: 1px;
+  font-family  : Heyam,serif;
+`;
+
 export const WorkContainer = styled.div`
     background-color: rgb(233, 236, 239, 0.5);
     display: flex;
@@ -38,7 +46,7 @@ export const WorkTitle = styled.p`
     font-color: #212529;
     font-size: 54px;
     font-weight: 500;
-
+    font-family  : Heyam,serif;
 `;
 
 export const WorkBody = styled.p`

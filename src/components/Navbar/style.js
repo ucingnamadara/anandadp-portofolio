@@ -20,17 +20,18 @@ export const NavbarMenuSection = styled.div`
 `;
 
 export const NavbarLogo = styled.a`
-  font-weight: 500;
+  font-weight: 300;
   color: #e9ecef;
   text-decoration: none;
   font-size: 32px;
   align-items: center;
   display: flex;
+  font-family  : Heyam,serif;
 `;
 
 export const NavbarMenu = styled.a`
-  color: #adb5bd;
-  text-decoration: none;
+  color:#e9ecef;
+  text-decoration: ${(props) => (props.active ? 'underline' : 'none')};
   font-size: 24px;
-  font-weight: ${(props) => (props.active ? '700' : '400')};
+  font-weight: 500;
 `;
