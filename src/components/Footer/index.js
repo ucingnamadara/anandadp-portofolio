@@ -25,28 +25,32 @@ function Footer() {
         <MediaSocialButton
           href={'https://www.linkedin.com/in/anandadp/'}
           target="_blank"
+          title="LinkedIn"
         >
           <Linkedin />
         </MediaSocialButton>
         <MediaSocialButton
           href={'https://twitter.com/anandana_'}
           target="_blank"
+          title="Twitter"
         >
           <TwitterX />
         </MediaSocialButton>
         <MediaSocialButton
           href={'https://www.instagram.com/anandadp_/'}
           target="_blank"
+          title="Instagram"
         >
           <Instagram />
         </MediaSocialButton>
         <MediaSocialButton
           href={'https://github.com/ucingnamadara'}
           target="_blank"
+          title="GitHub"
         >
           <Github />
         </MediaSocialButton>
-        <MediaSocialButton href={'https://t.me/anandadp03'} target="_blank">
+        <MediaSocialButton href={'https://t.me/anandadp03'} target="_blank" title="Telegram">
           <Telegram />
         </MediaSocialButton>
       </MediaSocialSection>
