@@ -32,7 +32,7 @@ export const WorkContainer = styled.div`
   background-color: rgb(233, 236, 239, 0.5);
   display: flex;
   flex-direction: grid;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin-top: 2rem;
   padding: 7rem;
