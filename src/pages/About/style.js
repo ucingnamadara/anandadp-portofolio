@@ -36,3 +36,17 @@ export const TextNormal = styled.p`
   font-size: 28px;
   padding-top: 2rem;
 `;
+
+export const ListOl = styled.ul`
+    margin-top: 89px;
+`
+
+export const ListLi = styled.li`
+    font-family: 'Encode Sans', sans-serif;
+    font-size: 28px;
+    margin-top: 5px
+`
+
+export const ListB = styled.p`
+    font-weight: 600;
+`

@@ -7,6 +7,9 @@ import {
   Container,
   HeaderDiv,
   HeaderPicture,
+  ListB,
+  ListLi,
+  ListOl,
   TextBold,
   TextNormal,
 } from './style';
@@ -64,7 +67,15 @@ function About() {
         <HeaderDiv>
           <HeaderPicture src={Mentor}></HeaderPicture>
         </HeaderDiv>
-        <TextBold>Outside Work</TextBold>
+        <TextNormal>My tenure as a mentor was marked by significant achievements, including:</TextNormal>
+        <ListOl type=''>
+          <ListLi><ListB>Developing a comprehensive curriculum</ListB> that covers both theoretical and practical aspects of Quarkus.</ListLi>
+          <ListLi><ListB>Guiding students through complex projects</ListB> , which helped them build a solid portfolio to showcase to potential employers.</ListLi>
+          <ListLi><ListB>Creating a supportive learning environment</ListB>  that encouraged collaboration and peer learning among the participants.</ListLi>
+          <ListLi><ListB>Implementing feedback mechanisms</ListB>  that allowed for continuous improvement of the bootcamp structure and content.</ListLi>
+          <ListLi><ListB>Fostering a community</ListB> where past and present participants can network, share opportunities, and continue learning.</ListLi>
+        </ListOl>
+        <TextNormal>These efforts not only enhanced the readiness of the participants for the professional world but also contributed to the growth of the local tech community.</TextNormal>
       </Body>
       <Footer />
     </Container>

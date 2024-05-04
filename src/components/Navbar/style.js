@@ -10,7 +10,7 @@ export const Container = styled.div`
 `;
 
 export const NavbarLogoImg = styled.img`
-  width: 36px;
+  width: 38px;
   margin-right: 0.5rem;
 `;
 
@@ -27,6 +27,10 @@ export const NavbarLogo = styled.a`
   align-items: center;
   display: flex;
   font-family: Heyam, serif;
+  &:hover img{
+    width: 35px;
+    border: 3px solid #e9ecef;
+  }
 `;
 
 export const NavbarMenu = styled.a`
@@ -34,4 +38,11 @@ export const NavbarMenu = styled.a`
   text-decoration: ${(props) => (props.active ? 'underline' : 'none')};
   font-size: 24px;
   font-weight: 500;
+  padding: 2px 5px;
+  border-radius: 8px;
+  &:hover{
+    color: #212529;
+    background-color:  #e9ecef;
+    text-decoration: none;
+  }
 `;
