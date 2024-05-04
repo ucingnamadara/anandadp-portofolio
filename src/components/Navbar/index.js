@@ -13,11 +13,10 @@ function Navbar(props) {
   return (
     <Container>
       <NavbarLogo href="/">
-        <NavbarLogoImg src={logoImg} />
-        = Nandaaa
+        <NavbarLogoImg src={logoImg} />= Nandaaa
       </NavbarLogo>
       <NavbarMenuSection>
-      <NavbarMenu
+        <NavbarMenu
           href="/works"
           active={props.page === 'works' ? true : false}
         >

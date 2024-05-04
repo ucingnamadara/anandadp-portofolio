@@ -26,11 +26,11 @@ export const NavbarLogo = styled.a`
   font-size: 32px;
   align-items: center;
   display: flex;
-  font-family  : Heyam,serif;
+  font-family: Heyam, serif;
 `;
 
 export const NavbarMenu = styled.a`
-  color:#e9ecef;
+  color: #e9ecef;
   text-decoration: ${(props) => (props.active ? 'underline' : 'none')};
   font-size: 24px;
   font-weight: 500;

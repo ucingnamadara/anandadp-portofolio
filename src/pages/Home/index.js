@@ -29,7 +29,10 @@ function Home() {
         <HeaderPhotoProfile src={profile} />
         <HeaderFullName>Ananda Dana Pratama</HeaderFullName>
         <HeaderNickName>
-          <a href='https://open.spotify.com/track/74bzlwFt2z6WNsDcNPkgYF?si=3905fc7170064ecf'><FlagIcon src={flag} title="Indonesia"/></a> nanda/dana
+          <a href="https://open.spotify.com/track/74bzlwFt2z6WNsDcNPkgYF?si=3905fc7170064ecf">
+            <FlagIcon src={flag} title="Indonesia" />
+          </a>{' '}
+          nanda/dana
         </HeaderNickName>
       </HeaderContainer>
       <DescriptionContainer>

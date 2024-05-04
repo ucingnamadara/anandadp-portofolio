@@ -50,7 +50,11 @@ function Footer() {
         >
           <Github />
         </MediaSocialButton>
-        <MediaSocialButton href={'https://t.me/anandadp03'} target="_blank" title="Telegram">
+        <MediaSocialButton
+          href={'https://t.me/anandadp03'}
+          target="_blank"
+          title="Telegram"
+        >
           <Telegram />
         </MediaSocialButton>
       </MediaSocialSection>

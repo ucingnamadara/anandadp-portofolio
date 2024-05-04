@@ -19,5 +19,7 @@ p {
 
 @font-face {
   font-family: 'Heyam';
-  src: local('Heyam'), url(./assets/fonts/Heyam.ttf) format('truetype');
+  src:
+    local('Heyam'),
+    url(./assets/fonts/Heyam.ttf) format('truetype');
 }
