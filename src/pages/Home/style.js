@@ -1,7 +1,7 @@
 import { styled } from 'styled-components';
 
 export const Container = styled.div`
-  background: #f8f9fa;
+  padding-top: 12.625rem;
 `;
 
 export const HeaderContainer = styled.div`
@@ -9,7 +9,6 @@ export const HeaderContainer = styled.div`
   flex-direction: column;
   align-items: center;
   just-content: center;
-  margin-top: 9.625rem;
   margin-bottom: 9.625rem;
 `;
 
@@ -84,6 +83,7 @@ export const DescriptionDownloadButton = styled.a`
   font-weight: 500;
 
   &:hover {
-    opacity: 0.7;
-  }
+    background-color: #212529;
+    color: rgb(233, 236, 239);
+  } 
 `;

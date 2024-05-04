@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 
-export const Container = styled.div``;
+export const Container = styled.div`
+    padding-top: 10rem;
+`;
 
 export const AboutTitle = styled.p`
-  font-size: 68px;
+  font-size: 100px;
   font-weight: 400;
   font-family: Heyam, serif;
-  padding-top: 7rem;
 `;
 
 export const HeaderDiv = styled.div`
@@ -38,7 +39,7 @@ export const TextNormal = styled.p`
 `;
 
 export const ListOl = styled.ul`
-    margin-top: 89px;
+    margin-top: 2rem;
 `
 
 export const ListLi = styled.li`

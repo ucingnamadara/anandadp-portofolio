@@ -48,7 +48,7 @@ const works = [
     title: 'Fooma',
     description:
       'Lifestyle apps seamlessly integrates food discovery, culinary experiences, and event management.',
-    year: '2023',
+    year: '2023 - 2024',
     image: fooma,
     tags: ['web', 'mobile', 'rest', 'quarkus'],
   },
@@ -56,7 +56,7 @@ const works = [
     title: 'Fooma CRM',
     description:
       'CRM system seamlessly integrates guest data, personalized marketing, and operational efficiency for restaurants and hospitality businesses.',
-    year: '2023',
+    year: '2023 - 2024',
     image: foomaCrm,
     tags: ['web', 'rest', 'quarkus'],
   },
@@ -70,7 +70,7 @@ function Works() {
         <Text size="32px" weight="400">
           Some of Nanda's
         </Text>
-        <TextBold size="96px">Works</TextBold>
+        <TextBold size="100px">Works</TextBold>
       </Title>
       {works.map((work) => {
         return (

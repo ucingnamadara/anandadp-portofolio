@@ -2,6 +2,7 @@ import { styled } from 'styled-components';
 
 export const Container = styled.div`
   background: #f8f9fa;
+  padding-top: 11.625rem;
 `;
 
 export const Title = styled.div`
@@ -9,7 +10,7 @@ export const Title = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 89px 0 89px 0;
+  margin: 0 0 89px 0;
 `;
 
 export const Text = styled.p`

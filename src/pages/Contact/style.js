@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const CardDiv = styled.div`
     display: flex;
     flex-direction: column;
-    margin: 89px 0px 0px 0px;
+    margin: 10rem 0px 0px 0px;
 `;
 export const Title = styled.p`
     font-family: Heyam, serif;

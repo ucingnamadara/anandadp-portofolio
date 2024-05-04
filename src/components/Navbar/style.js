@@ -1,16 +1,23 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 7rem;
-  height: 80px;
+  z-index: 1;
+  position: fixed;
+  top: 0px;
+  width: 100%;
   background-color: #212529;
 `;
 
+export const NavbarDiv = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 7rem;
+`;
+
 export const NavbarLogoImg = styled.img`
-  width: 38px;
+  width: 42px;
   margin-right: 0.5rem;
 `;
 
@@ -23,12 +30,12 @@ export const NavbarLogo = styled.a`
   font-weight: 300;
   color: #e9ecef;
   text-decoration: none;
-  font-size: 32px;
+  font-size: 42px;
   align-items: center;
   display: flex;
   font-family: Heyam, serif;
   &:hover img{
-    width: 35px;
+    width: 39px;
     border: 3px solid #e9ecef;
   }
 `;

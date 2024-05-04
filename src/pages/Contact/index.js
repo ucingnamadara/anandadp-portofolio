@@ -15,8 +15,7 @@ function Contact() {
     navigator.clipboard.writeText("anandapratama03@gmail.com").then(() =>
     {
       toast.success("Email address copied!", {
-        position: "bottom-right",
-        className: "ToastStyle"
+        position: "bottom-right"
       });
     }).catch((error) => {
       // Handle any errors here.
@@ -30,7 +29,7 @@ function Contact() {
       <Navbar page="contact" />
       <CardDiv>
         <Title>Feel free to contact me!</Title>
-        <NormalText>If you have any questions or need assistance with a project, feel free to reach out to me via <CopyText onClick={copyText}>anandapratama03@gmail.com <Copy/></CopyText>. I'm always open to new opportunities and collaborations. ^_^</NormalText>
+        <NormalText>If you have any questions or need assistance with a project, feel free to reach out to me via <CopyText onClick={copyText}>anandapratama03@gmail.com <Copy/></CopyText>. I'm always open to new opportunities and collaborations ♥♥♥♥♥</NormalText>
       </CardDiv>
       <ToastContainer position="top-right" />
       <Footer />
