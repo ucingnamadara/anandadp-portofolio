@@ -5,10 +5,6 @@ import { Copy } from 'react-bootstrap-icons';
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-function copyText() {
-  
-}
-
 function Contact() {
   const copyText = () => {
     /* Copy text into clipboard */
