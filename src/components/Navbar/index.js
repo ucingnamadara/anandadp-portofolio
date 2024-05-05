@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   Container,
   NavbarLogoImg,
@@ -6,11 +6,42 @@ import {
   NavbarMenuSection,
   NavbarMenu,
   NavbarDiv,
+  SidebarDiv,
+  SidebarLogo,
 } from './style';
+import { List } from 'react-bootstrap-icons';
 
 const logoImg = require('../../assets/logo.png');
 
+function NavigateMenu (props) {
+  return(
+    <>
+      <NavbarMenu
+      href="/works"
+      active={props.page === 'works' ? true : false}
+    >
+      Works
+    </NavbarMenu>
+    <NavbarMenu
+      href="/about"
+      active={props.page === 'about' ? true : false}
+    >
+      About
+    </NavbarMenu>
+    <NavbarMenu
+      href="/contact"
+      active={props.page === 'contact' ? true : false}
+    >
+      Contact
+    </NavbarMenu>
+    </>
+  );
+}
+
 function Navbar(props) {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => setIsOpen(!isOpen);
+
   return (
     <Container>
       <NavbarDiv>
@@ -18,26 +49,14 @@ function Navbar(props) {
           <NavbarLogoImg src={logoImg} />= Nandaaa
         </NavbarLogo>
         <NavbarMenuSection>
-          <NavbarMenu
-            href="/works"
-            active={props.page === 'works' ? true : false}
-          >
-            Works
-          </NavbarMenu>
-          <NavbarMenu
-            href="/about"
-            active={props.page === 'about' ? true : false}
-          >
-            About
-          </NavbarMenu>
-          <NavbarMenu
-            href="/contact"
-            active={props.page === 'contact' ? true : false}
-          >
-            Contact
-          </NavbarMenu>
+          {NavigateMenu(props)}
         </NavbarMenuSection>
+        <SidebarLogo onClick={toggle}><List/></SidebarLogo>
       </NavbarDiv>
+      
+      <SidebarDiv isOpen={isOpen} toggle={toggle}>
+        {NavigateMenu(props)}
+      </SidebarDiv>
       
     </Container>
   );

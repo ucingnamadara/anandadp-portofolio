@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakpoints } from "../../constants/device";
 
 export const CardDiv = styled.div`
     display: flex;
@@ -7,8 +8,18 @@ export const CardDiv = styled.div`
 `;
 export const Title = styled.p`
     font-family: Heyam, serif;
-    font-size: 96px;
-    padding: 0 7rem;
+    @media (min-width: ${breakpoints.mobile}) {
+        font-size: 52px;
+        padding: 0 5rem;
+    }
+    @media (min-width: ${breakpoints.tablet}) {
+        font-size: 72px;
+        padding: 0 6rem;
+    }
+    @media (min-width: ${breakpoints.desktop}) {
+        font-size: 100px;
+        padding: 0 7rem;
+    }
 `;
 
 export const CopyText = styled.a`
@@ -22,6 +33,19 @@ export const CopyText = styled.a`
 `
 export const NormalText = styled.p`
     font-weight: 400;
-    font-size: 36px;
-    padding: 0 7rem;
+    @media (min-width: ${breakpoints.mobile}) {
+        font-size: 20px;
+        
+        padding: 0 5rem;
+    }
+    @media (min-width: ${breakpoints.tablet}) {
+        font-size: 28px;
+        
+        padding: 0 6rem;
+    }
+    @media (min-width: ${breakpoints.desktop}) {
+        font-size: 36px;
+        
+        padding: 0 7rem;
+    }
 `
