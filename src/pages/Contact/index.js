@@ -25,7 +25,7 @@ function Contact() {
       <Navbar page="contact" />
       <CardDiv>
         <Title>Feel free to contact me!</Title>
-        <NormalText>If you have any questions or need assistance with a project, feel free to reach out to me via <CopyText onClick={copyText}>anandapratama03@gmail.com <Copy/></CopyText>. I'm always open to new opportunities and collaborations ♥♥♥♥♥</NormalText>
+        <NormalText>If you have any questions or need assistance with a project, feel free to reach out to me via email<CopyText onClick={copyText}> (Copy Me<Copy/>)</CopyText>. I'm always open to new opportunities and collaborations ♥♥♥♥♥</NormalText>
       </CardDiv>
       <ToastContainer position="top-right" />
       <Footer />

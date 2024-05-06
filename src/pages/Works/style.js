@@ -38,11 +38,11 @@ export const WorkContainer = styled.div`
   gap: 1rem;
   @media (min-width: ${breakpoints.mobile}) {
     flex-direction: column-reverse;
-    padding: 4rem;
+    padding: 3rem;
   }
   @media (min-width: ${breakpoints.tablet}) {
     flex-direction: column-reverse;
-    padding: 6rem;
+    padding: 5rem;
   }
   @media (min-width: ${breakpoints.desktop}) {
     flex-direction: row;

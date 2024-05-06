@@ -9,7 +9,7 @@ export const AboutTitle = styled.p`
   font-weight: 400;
   font-family: Heyam, serif;
   @media (min-width: ${breakpoints.mobile}) {
-    font-size: 54px;
+    font-size: 42px;
   }
   @media (min-width: ${breakpoints.tablet}) {
     font-size: 72px;
@@ -42,10 +42,10 @@ export const Body = styled.div`
   display: flex;
   flex-direction: column;
   @media (min-width: ${breakpoints.mobile}) {
-    padding: 0 5rem;
+    padding: 0 3rem;
   }
   @media (min-width: ${breakpoints.tablet}) {
-    padding: 0 6rem;
+    padding: 0 5rem;
   }
   @media (min-width: ${breakpoints.desktop}) {
     padding: 0 7rem;
