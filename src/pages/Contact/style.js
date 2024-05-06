@@ -9,12 +9,12 @@ export const CardDiv = styled.div`
 export const Title = styled.p`
     font-family: Heyam, serif;
     @media (min-width: ${breakpoints.mobile}) {
-        font-size: 52px;
-        padding: 0 5rem;
+        font-size: 42px;
+        padding: 0 3rem;
     }
     @media (min-width: ${breakpoints.tablet}) {
-        font-size: 72px;
-        padding: 0 6rem;
+        font-size: 64px;
+        padding: 0 5rem;
     }
     @media (min-width: ${breakpoints.desktop}) {
         font-size: 100px;
@@ -34,14 +34,14 @@ export const CopyText = styled.a`
 export const NormalText = styled.p`
     font-weight: 400;
     @media (min-width: ${breakpoints.mobile}) {
-        font-size: 20px;
+        font-size: 18px;
         
-        padding: 0 5rem;
+        padding: 0 3rem;
     }
     @media (min-width: ${breakpoints.tablet}) {
-        font-size: 28px;
+        font-size: 24px;
         
-        padding: 0 6rem;
+        padding: 0 5rem;
     }
     @media (min-width: ${breakpoints.desktop}) {
         font-size: 36px;

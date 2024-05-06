@@ -11,7 +11,7 @@ export const HeaderContainer = styled.div`
   align-items: center;
   just-content: center;
   @media (min-width: ${breakpoints.mobile}) {
-    margin-bottom: 5.625rem;
+    margin-bottom: 5rem;
   }
   @media (min-width: ${breakpoints.tablet}) {
     
@@ -29,13 +29,13 @@ export const HeaderPhotoProfile = styled.img`
   box-shadow: 0 7px 10px rgba(0, 0, 0, 0.25);
   @media (min-width: ${breakpoints.mobile}) {
 
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
   }
   @media (min-width: ${breakpoints.tablet}) {
     
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
   }
   @media (min-width: ${breakpoints.desktop}) {
     
@@ -49,10 +49,10 @@ export const HeaderFullName = styled.p`
   font-weight: 700;
   color: #212529;
   @media (min-width: ${breakpoints.mobile}) {
-    font-size: 32px;
+    font-size: 26px;
   }
   @media (min-width: ${breakpoints.tablet}) {
-    font-size: 45px;
+    font-size: 38px;
   }
   @media (min-width: ${breakpoints.desktop}) {
     font-size: 64px;
@@ -63,7 +63,7 @@ export const HeaderNickName = styled.p`
   font-weight: 400;
   color: #212529;
   @media (min-width: ${breakpoints.mobile}) {
-    font-size: 20px;
+    font-size: 16px;
   }
   @media (min-width: ${breakpoints.tablet}) {
     font-size: 26px;
@@ -87,22 +87,19 @@ export const DescriptionHeadlineText = styled.text`
   padding-bottom: 0.5rem;
   @media (min-width: ${breakpoints.mobile}) {
     margin-top: 5rem;
-    font-size: 36px;
-    
-    padding-left: 5rem;
-    padding-right: 5rem;
+    font-size: 24px;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
   @media (min-width: ${breakpoints.tablet}) {
     margin-top: 6rem;
     font-size: 42px;
-    
-    padding-left: 6rem;
-    padding-right: 6rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
   @media (min-width: ${breakpoints.desktop}) {
     margin-top: 7rem;
     font-size: 54px;
-    
     padding-left: 7rem;
     padding-right: 7rem;
   }
@@ -114,14 +111,14 @@ export const DescriptionBodyText = styled.text`
   color: #212529;
   margin-top: 0.5rem;
   @media (min-width: ${breakpoints.mobile}) {
-    font-size: 24px;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    font-size: 18px;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
   @media (min-width: ${breakpoints.tablet}) {
-    font-size: 32px;
-    padding-left: 6rem;
-    padding-right: 6rem;
+    font-size: 28px;
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
   @media (min-width: ${breakpoints.desktop}) {
     font-size: 36px;
@@ -151,10 +148,10 @@ export const CustomLinkWithColor = styled.a`
 export const DescriptionDownloadSection = styled.div`
   display: flex;
   @media (min-width: ${breakpoints.mobile}) {
-    margin: 2rem 5rem 5rem 5rem;
+    margin: 3rem 3rem 3rem 3rem;
   }
   @media (min-width: ${breakpoints.tablet}) {
-    margin: 3rem 6rem 6rem 6rem;
+    margin: 3rem 5rem 5rem 5rem;
   }
   @media (min-width: ${breakpoints.desktop}) {
     margin: 4rem 7rem 7rem 7rem;
